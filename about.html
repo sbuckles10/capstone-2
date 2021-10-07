@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -25,10 +27,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="checkout.html">Checkout</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -47,7 +46,15 @@
   <img height="500" width="600" src="http://www.okcsos.org/wp-content/uploads/2017/09/about-us.jpg" alt="Logo">
     <h1 class="primary">Sean's Shoes</h1>
     <p class="primary">Buying shoes, made easy</p>
-    <a href="index.html" class="btn btn-primary">home</a>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        Navigate
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="index.html">Home</a></li>
+        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
   </div>
 <h1 class="secondary">Get to Know Us</h1>
 
@@ -56,15 +63,15 @@
     <div class="row">
       <div class="col-lg-4">
         <h3>Our Story</h3>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="lead">From a young age, I have had a strong passion for sneakers and the culture surrounding them.  I am from Vancouver, Canada, and have spent my whole life there </p>
       </div>
       <div class="col-lg-4">
         <h3>Our Mission</h3>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="lead">To provide a place for customers to purchase high-end sneakers from a vendor they know and trust</p>
       </div>
       <div class="col-lg-4">
-        <h3>Fun</h3>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <h3>How are we different?</h3>
+        <p class="lead">Here at Sean's Shoes, our goal is to sell shoes with the environment in mind as well. Opperating from an online only perspective eliminates the need for stores, which is a large contributer to carbon footprints around the world.</p>
       </div>
     </div>
   </div>
@@ -81,8 +88,9 @@
   </div>
 
 <!-- FOOTER -->
-<div id="footer" class="bg-secondary p-5 text-white">
-    &copy; 2021 Launch Page Inc
+<div class="bg-secondary p-5 text-dark">
+    &copy; 2021 Sean's Shoes Inc.
+    <p>Buying shoes, made easy</p>
   </div>
 </body>
 </html>

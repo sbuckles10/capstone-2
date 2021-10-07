@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -25,10 +27,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="checkout.html">Checkout</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -59,6 +58,16 @@
           <h3>Dior Air Jordan 1</h3>
           <img height="400px" width="430px" src="https://mivintagelabel.com/wp-content/uploads/2020/10/Air-Jordan-1-x-Dior-2.jpg" alt="">
           <p class="prices">$2400</p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Sizes (Buy Now)
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="checkout.html">7.5</a></li>
+              <li><a class="dropdown-item" href="checkout.html">8.5</a></li>
+              <li><a class="dropdown-item" href="checkout.html">11</a></li>
+            </ul>
+          </div>
         </center>
       </div>
       <div class="col-lg-4">
@@ -66,6 +75,16 @@
           <h3>Yeezy 700 WaveRunner</h3>
           <img height="400px" width="430px" src="https://i.pinimg.com/originals/fb/17/af/fb17afa921ed32328441a5d0dfd4eeca.jpg" alt="">
           <p class="prices">$500</p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Sizes (Buy Now)
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="checkout.html">9.5</a></li>
+              <li><a class="dropdown-item" href="checkout.html">10</a></li>
+              <li><a class="dropdown-item" href="checkout.html">12.5</a></li>
+            </ul>
+          </div>
         </center>
       </div>
       <div class="col-lg-4">
@@ -73,6 +92,16 @@
           <h3>Off White X Nike Presto</h3>
           <img height="400px" width="430px" src="https://houseofheat.co/app/uploads/2017/10/22857528_1742423636061157_2223562134585868288_n-e1509484622467.jpg" alt="">
           <p class="prices">$1800</p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Sizes (Buy Now)
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="checkout.html">8</a></li>
+              <li><a class="dropdown-item" href="checkout.html">10.5</a></li>
+              <li><a class="dropdown-item" href="checkout.html">11</a></li>
+            </ul>
+          </div>
         </center>
       </div>
     </div>
@@ -82,17 +111,29 @@
 <div class="jumbotron text-center mb-0">
     <p class="sign-up" class="lead mb-4">Sign Up for More Infomation</p>
     <div class="d-flex justify-content-center">
-      <form action="#" class='form-inline'>
-        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-      </form>
+        <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Remember my password</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
     </div>
   </div>
 
 <!-- FOOTER -->
-<div id="footer" class="bg-secondary p-5 text-white">
-    &copy; 2021 Launch Page Inc
-    <p>aaaaaa</p>
+<div class="bg-secondary p-5 text-dark">
+    &copy; 2021 Sean's Shoes Inc.
+    <p>Buying shoes, made easy</p>
   </div>
 
 </body>

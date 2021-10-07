@@ -14,3 +14,27 @@
 .prices{
   font-size: 70px
 }
+
+.mb-3{
+  color: red
+}
+
+#emailHelp{
+  color: red
+}
+
+#exampleInputPassword1{
+  color: red
+}
+
+#exampleInputEmail1{
+  color: red
+}
+
+.checkout{
+  margin-left: 200px
+}
+
+#dropdownMenuButton2{
+  background-color: #D74582
+}
